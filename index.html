@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#198754">
+<title>Mini-Foglio di Calcolo</title>
+<link rel="manifest" href="./manifest.json">
+<link rel="apple-touch-icon" href="./icons/icon-192.png">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<nav class="navbar bg-success px-2 py-1">
+  <span class="navbar-brand text-white mb-0 h6">Mini-Foglio</span>
+  <button id="inst" class="btn btn-light btn-sm" hidden>Installa</button>
+</nav>
+<div class="input-group input-group-sm p-1 bg-light border-bottom">
+  <input id="nb" class="form-control" style="max-width:72px" readonly aria-label="Cella selezionata">
+  <span class="input-group-text">fx</span>
+  <input id="fb" class="form-control" placeholder="Numero, testo o =formula" autocomplete="off" aria-label="Barra della formula">
+</div>
+<div id="sc" tabindex="0">
+  <div id="sp"></div>
+  <div id="ly"><div id="cells"></div><input id="ed" autocomplete="off" aria-label="Modifica cella"></div>
+</div>
+<script src="./js/coordinates.js"></script>
+<script src="./js/engine.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>

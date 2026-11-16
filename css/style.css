@@ -1,0 +1,14 @@
+html, body { height: 100%; margin: 0; }
+body { display: flex; flex-direction: column; height: 100dvh; overscroll-behavior: none; }
+#sc { flex: 1; overflow: auto; position: relative; outline: 0; background: #fff; }
+#sp { position: absolute; top: 0; left: 0; pointer-events: none; }
+#ly { position: sticky; top: 0; left: 0; overflow: hidden; font: 13px system-ui, sans-serif; user-select: none; }
+.c, .h { position: absolute; box-sizing: border-box; overflow: hidden; white-space: nowrap; }
+.c { width: 90px; height: 26px; border: 1px solid #e3e6e8; padding: 3px 5px; }
+.c.n { text-align: right; }
+.c.e { color: #c62828; font-weight: 600; }
+.c.sel { outline: 2px solid #198754; outline-offset: -2px; z-index: 2; }
+.h { background: #eef1f3; border: 1px solid #cfd4d8; text-align: center; line-height: 24px; font-weight: 600; z-index: 4; }
+.h.a { background: #c8e6d4; }
+#ed { position: absolute; display: none; z-index: 6; box-sizing: border-box; width: 90px; height: 26px;
+  border: 2px solid #198754; padding: 0 4px; font: 13px system-ui, sans-serif; outline: 0; }
